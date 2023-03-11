@@ -87,3 +87,8 @@ all_students_grade
 # Utilice lapply pasando de parámetros all_students_grade y la función index_education.
 test_lapply <- lapply(all_students_grade,index_education)
 test_lapply 
+
+#8 Math utilities 
+#Utilice students_grades_df y obtenga el promedio de las 4 asignaturas luegoasigne los resultados en un vector de nombre score_mean.
+score_mean <- rowSums(students_grades_df[, 1:4])/4
+score_mean
